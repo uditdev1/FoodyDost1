@@ -34,7 +34,7 @@ const SolanaPayInro = () => {
         // })   
     })
 
-    const endpoint = import.meta.env.VITE_CRYPTO_ENDPOINT;
+    const endpoint = import.meta.env.VITE_SOLANA_RPC_URL || "https://api.devnet.solana.com";
 
     return (
         <div className="relative solanaLogo1_par flex h-screen w-screen">

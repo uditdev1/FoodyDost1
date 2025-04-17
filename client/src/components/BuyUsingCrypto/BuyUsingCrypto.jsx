@@ -12,7 +12,7 @@ import { SendTokens } from './SendTokens';
 import { ShowSolBalance } from './ShowSolBalance';
 
 function Xyz({amount, handleApprove, handleCloseCryptoMenu}) {
-    const endpoint = import.meta.env.VITE_CRYPTO_ENDPOINT;
+    const endpoint = import.meta.env.VITE_SOLANA_RPC_URL || "https://api.devnet.solana.com";
     return (
         <div className='flex flex-col m-2 rounded-xl z-[99999] bg-slate-900 w-fit justify-center items-center'>
         <ConnectionProvider endpoint={endpoint}>
